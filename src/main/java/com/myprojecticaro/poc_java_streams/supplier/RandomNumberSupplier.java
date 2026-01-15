@@ -9,7 +9,7 @@ public class RandomNumberSupplier implements Supplier<Integer> {
 
     @Override
     public Integer get() {
-        System.out.println("Gerando número...");
+        System.out.println("Generating number...");
         return random.nextInt(100);
     }
 }
