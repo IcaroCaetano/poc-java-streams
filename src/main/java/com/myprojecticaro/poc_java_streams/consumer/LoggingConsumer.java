@@ -6,7 +6,7 @@ public class LoggingConsumer implements Consumer<Integer> {
 
     @Override
     public void accept(Integer value) {
-        System.out.println("Consumindo valor: " + value);
+        System.out.println("Consuming value: " + value);
     }
 }
 
