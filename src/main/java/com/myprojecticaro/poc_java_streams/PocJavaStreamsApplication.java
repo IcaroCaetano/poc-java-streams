@@ -7,7 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PocJavaStreamsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PocJavaStreamsApplication.class, args);
+		// supplier
+		var supplier = new RandomNumberSupplier();
+		// consumer
+        var consumer = new LoggingConsumer();
+        var service = new StreamProcessingService();
+
+        service.process(supplier, consumer);
 	}
 
 }
