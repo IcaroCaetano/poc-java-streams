@@ -1,12 +1,15 @@
 package com.myprojecticaro.poc_java_streams;
 
+import com.myprojecticaro.poc_java_streams.consumer.LogConsumer;
 import com.myprojecticaro.poc_java_streams.consumer.LoggingConsumer;
 import com.myprojecticaro.poc_java_streams.consumer.MetricConsumer;
+import com.myprojecticaro.poc_java_streams.model.Order;
 import com.myprojecticaro.poc_java_streams.service.StreamProcessingService;
-import com.myprojecticaro.poc_java_streams.supplier.IncrementalSupplier;
-import com.myprojecticaro.poc_java_streams.supplier.RandomNumberSupplier;
+import com.myprojecticaro.poc_java_streams.supplier.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.time.LocalDateTime;
+import java.util.UUID;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
@@ -19,9 +22,9 @@ public class PocJavaStreamsApplication {
 		var supplier = new RandomNumberSupplier();
 		// consumer
         var consumer = new LoggingConsumer();
-        var service = new StreamProcessingService();
+        var serviceProcessing = new StreamProcessingService();
 
-        service.process(supplier, consumer);
+            serviceProcessing.process(supplier, consumer);
 
 
         System.out.println("===== JAVA STREAMS | SUPPLIER & CONSUMER POC =====");
