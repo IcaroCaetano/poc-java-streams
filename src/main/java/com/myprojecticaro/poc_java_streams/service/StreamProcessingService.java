@@ -1,5 +1,5 @@
 
-package com.example.streams.service;
+package com.myprojecticaro.poc_java_streams.service;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;

@@ -1,4 +1,4 @@
-package com.example.streams.consumer;
+package com.myprojecticaro.poc_java_streams.consumer;
 
 import java.util.function.Consumer;
 
