@@ -8,10 +8,10 @@ public class PocJavaStreamsApplication {
 
 	public static void main(String[] args) {
 		// supplier
-		var supplier = new RandomNumberSupplier();
+		var supplier = new com.example.streams.supplier.RandomNumberSupplier();
 		// consumer
-        var consumer = new LoggingConsumer();
-        var service = new StreamProcessingService();
+        var consumer = new com.example.streams.consumer.LoggingConsumer();
+        var service = new com.example.streams.service.StreamProcessingService();
 
         service.process(supplier, consumer);
 	}
