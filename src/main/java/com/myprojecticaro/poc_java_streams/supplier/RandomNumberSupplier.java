@@ -1,4 +1,4 @@
-package com.example.streams.supplier;
+package com.myprojecticaro.poc_java_streams.supplier;
 
 import java.util.Random;
 import java.util.function.Supplier;
