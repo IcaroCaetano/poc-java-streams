@@ -18,7 +18,10 @@ import java.util.stream.Stream;
 public class PocJavaStreamsApplication {
 
 	public static void main(String[] args) {
-		// supplier
+
+      System.out.println("===== JAVA STREAMS | SUPPLIER & CONSUMER POC =====");
+
+        // supplier
 		var supplier = new RandomNumberSupplier();
 		// consumer
         var consumer = new LoggingConsumer();
@@ -27,9 +30,6 @@ public class PocJavaStreamsApplication {
             serviceProcessing.process(supplier, consumer);
 
 
-        System.out.println("===== JAVA STREAMS | SUPPLIER & CONSUMER POC =====");
-
-        StreamProcessingService service = new StreamProcessingService();
 
         /* =====================================================
            1️⃣ IncrementalSupplier
