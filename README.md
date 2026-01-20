@@ -20,3 +20,10 @@ The goal is to show how these interfaces can be combined with Java Streams and t
 - Highlight lazy evaluation, side effects, and task execution
 
 - Provide a didactic and extensible POC suitable for learning or presentations
+
+## 🧩 Supplier
+
+#### What is it?
+
+'Supplier<T>' represents a function that produces values without receiving any input.
+
