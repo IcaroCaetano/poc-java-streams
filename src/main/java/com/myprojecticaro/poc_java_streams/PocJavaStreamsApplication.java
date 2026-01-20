@@ -4,6 +4,8 @@ import com.myprojecticaro.poc_java_streams.consumer.LogConsumer;
 import com.myprojecticaro.poc_java_streams.consumer.LoggingConsumer;
 import com.myprojecticaro.poc_java_streams.consumer.MetricConsumer;
 import com.myprojecticaro.poc_java_streams.model.Order;
+import com.myprojecticaro.poc_java_streams.runnable.CounterRunnable;
+import com.myprojecticaro.poc_java_streams.runnable.HelloRunnable;
 import com.myprojecticaro.poc_java_streams.service.StreamProcessingService;
 import com.myprojecticaro.poc_java_streams.supplier.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -124,6 +126,18 @@ public class PocJavaStreamsApplication {
                 .forEach(v -> System.out.println("✅ Consumido: " + v));
 
         System.out.println("\n===== FIM DA EXECUÇÃO =====");
+
+        System.out.println("\n--- Simple Runnable ---");
+
+        Runnable helloRunnable = new HelloRunnable();
+        helloRunnable.run();
+
+        System.out.println("\n--- Runnable with state ---");
+
+        Runnable counterRunnable = new CounterRunnable(10);
+        counterRunnable.run();
+        counterRunnable.run();
+        counterRunnable.run();
 	}
 
 }
