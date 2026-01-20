@@ -25,5 +25,5 @@ The goal is to show how these interfaces can be combined with Java Streams and t
 
 #### What is it?
 
-'Supplier<T>' represents a function that produces values without receiving any input.
+`Supplier<T>` represents a function that produces values without receiving any input.
 
