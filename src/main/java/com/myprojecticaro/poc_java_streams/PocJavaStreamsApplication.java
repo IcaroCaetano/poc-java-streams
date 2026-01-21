@@ -128,6 +128,8 @@ public class PocJavaStreamsApplication {
 
       System.out.println("\n===== FIM DA EXECUÇÃO =====");
 
+	// Runnable
+		
       System.out.println("\n--- Simple Runnable ---");
 
       Runnable helloRunnable = new HelloRunnable();
