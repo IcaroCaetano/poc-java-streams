@@ -30,3 +30,33 @@ The goal is to show how these interfaces can be combined with Java Streams and t
 ````
 T get();
 ````
+
+### Typical Use Cases
+
+- Generating data on demand
+
+- Creating infinite or lazy streams
+
+- Mocking data for tests
+
+- Producing domain objects or events
+
+### Examples in this POC
+
+- Incremental value generation
+
+- Date and time generation
+
+- omain object creation (Order)
+
+- Resilient supplier with fallback logic
+
+### Example
+
+````
+Stream.generate(new IncrementalSupplier())
+.limit(5)
+.forEach(System.out::println);
+````
+
+📌 *Key concept:* Suppliers are only executed when the stream reaches a terminal operation.
