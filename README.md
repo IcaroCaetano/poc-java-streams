@@ -60,3 +60,37 @@ Stream.generate(new IncrementalSupplier())
 ````
 
 📌 *Key concept:* Suppliers are only executed when the stream reaches a terminal operation.
+
+## 🧩 Runnable
+
+### What is it?
+
+Runnable represents a task to be executed, without input parameters and without a return value.
+
+````
+void run();
+````
+
+### Typical Use Cases
+
+- Background jobs
+
+- Asynchronous processing
+
+- Workers and tasks
+
+- Thread execution
+
+### Examples in this POC
+
+- Simple runnable task
+
+- Stateful runnable
+
+- Heavy task simulation
+
+- Runnable that wraps a Consumer
+
+- Runnable executed via Thread
+
+### Example
