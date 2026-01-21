@@ -59,7 +59,7 @@ public class PocJavaStreamsApplication {
               .forEach(logDateConsumer);
 
         /* =====================================================
-           3️⃣ OrderSupplier (objeto de domínio)
+           3️⃣ OrderSupplier (domain object)
         ===================================================== */
       System.out.println("\n--- OrderSupplier ---");
 
@@ -84,9 +84,9 @@ public class PocJavaStreamsApplication {
               .forEach(logStringConsumer);
 
         /* =====================================================
-           5️⃣ Supplier simples + Consumer encadeado
+           5️⃣ Supplier simples + Consumer chained
         ===================================================== */
-      System.out.println("\n--- Supplier + Consumer encadeado ---");
+      System.out.println("\n--- Supplier + Consumer chained ---");
 
       Supplier<String> uuidSupplier =
               () -> UUID.randomUUID().toString();
@@ -95,7 +95,7 @@ public class PocJavaStreamsApplication {
               v -> System.out.println("📘 LOG: " + v);
 
       Consumer<String> persistConsumer =
-              v -> System.out.println("💾 Persistindo: " + v);
+              v -> System.out.println("💾 Persisting: " + v);
 
       Consumer<String> compositeConsumer =
               logConsumer.andThen(persistConsumer);
@@ -121,12 +121,12 @@ public class PocJavaStreamsApplication {
       System.out.println("\n--- Supplier + peek ---");
 
       Stream.generate(new IncrementalSupplier())
-              .peek(n -> System.out.println("👀 Gerado: " + n))
+              .peek(n -> System.out.println("👀 Generated: " + n))
               .filter(n -> n % 2 == 0)
               .limit(5)
-              .forEach(v -> System.out.println("✅ Consumido: " + v));
+              .forEach(v -> System.out.println("✅ Cosumed: " + v));
 
-      System.out.println("\n===== FIM DA EXECUÇÃO =====");
+      System.out.println("\n===== END OF EXECUTION =====");
 
 	// Runnable
 		
