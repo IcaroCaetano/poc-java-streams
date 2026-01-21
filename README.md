@@ -27,7 +27,7 @@ The goal is to show how these interfaces can be combined with Java Streams and t
 
 `Supplier<T>` represents a function that produces values without receiving any input.
 
-````
+````java
 T get();
 ````
 
@@ -53,7 +53,7 @@ T get();
 
 ### Example
 
-````
+````java
 Stream.generate(new IncrementalSupplier())
 .limit(5)
 .forEach(System.out::println);
@@ -67,7 +67,7 @@ Stream.generate(new IncrementalSupplier())
 
 Runnable represents a task to be executed, without input parameters and without a return value.
 
-````
+````java
 void run();
 ````
 
