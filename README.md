@@ -93,4 +93,11 @@ void run();
 
 - Runnable executed via Thread
 
-### Example
+#### Example
+
+````java
+Runnable task = () -> System.out.println("Running task");
+new Thread(task).start();
+````
+
+📌 *Key concept:* Runnable represents execution, not data transformation.
