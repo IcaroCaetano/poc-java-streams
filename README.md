@@ -101,3 +101,24 @@ new Thread(task).start();
 ````
 
 📌 *Key concept:* Runnable represents execution, not data transformation.
+
+## 🔗 Combining Supplier, Consumer, and Runnable
+
+One of the strengths of functional interfaces is how naturally they compose.
+
+### Conceptual Pipeline
+
+´´´´
+Supplier → Consumer → Runnable
+´´´´
+
+Example
+
+````java
+Supplier<String> supplier = () -> "Event";
+Consumer<String> consumer = v -> System.out.println(v);
+
+
+Runnable task = new ConsumerRunnable<>(supplier.get(), consumer);
+task.run();
+````
