@@ -108,9 +108,9 @@ One of the strengths of functional interfaces is how naturally they compose.
 
 ### Conceptual Pipeline
 
-´´´´
+````
 Supplier → Consumer → Runnable
-´´´´
+````
 
 Example
 
@@ -122,3 +122,51 @@ Consumer<String> consumer = v -> System.out.println(v);
 Runnable task = new ConsumerRunnable<>(supplier.get(), consumer);
 task.run();
 ````
+
+This demonstrates:
+
+- Data generation (Supplier)
+
+- Action definition (Consumer)
+
+- Task execution (Runnable)
+
+## 🚀 Application Entry Point
+
+The Application class acts as an orchestrator, executing:
+
+- All Supplier examples
+
+- Multiple Consumer strategies
+
+- Runnable executions (sync and async)
+
+This makes the POC easy to run and understand step by step.
+
+## 📚 Key Concepts Demonstrated
+
+- Lazy evaluation with Streams
+
+- Side effects and terminal operations
+
+- Functional composition (andThen)
+
+- Stateful vs stateless components
+
+- Synchronous vs asynchronous execution
+
+## 🔮 Possible Next Steps
+
+- Replace Thread with ExecutorService
+
+- Introduce Callable and Future
+
+- Add CompletableFuture
+
+- Convert to Spring Boot (CommandLineRunner)
+
+- Map concepts to classic design patterns (Producer–Consumer, Pipeline)
+
+## ✅ Conclusion
+
+This POC provides a clear and practical exploration of Supplier, Consumer, and Runnable, showing how Java’s functional interfaces enable expressive, modular, and modern application design.
