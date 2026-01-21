@@ -6,7 +6,7 @@ public class SimpleCallable implements Callable<String> {
 
     @Override
     public String call() {
-        System.out.println("🧠 Executando SimpleCallable...");
-        return "Resultado OK";
+        System.out.println("🧠 Executing SimpleCallable...");
+        return "Result OK";
     }
 }
