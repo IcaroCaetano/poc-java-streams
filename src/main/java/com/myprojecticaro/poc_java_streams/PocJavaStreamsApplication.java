@@ -151,7 +151,14 @@ public class PocJavaStreamsApplication {
         heavyTaskThread.join();
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
-
       }
+
+		System.out.println("=== BinaryOperator POC ===");
+
+        new SumBinaryOperatorExample().execute();
+        new MaxBinaryOperatorExample().execute();
+        new StringConcatBinaryOperatorExample().execute();
+        new BigDecimalSumBinaryOperatorExample().execute();
+        new CustomObjectBinaryOperatorExample().execute()
     }
 }
