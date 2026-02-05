@@ -10,9 +10,7 @@ public class MaxBinaryOperatorExample {
 
         BinaryOperator<Integer> maxOperator = (a, b) -> a > b ? a : b;
 
-        int max = values.stream()
-                .reduce(maxOperator)
-                .orElseThrow();
+        int max = values.stream().reduce(maxOperator).orElseThrow();
 
         System.out.println("Max value: " + max);
     }
