@@ -6,6 +6,8 @@ import java.util.function.BinaryOperator;
 public class CustomObjectBinaryOperatorExample {
 
     public void execute() {
+        System.out.println("Inicio StringConcatBinaryOperatorExample");
+
         List<Order> orders = List.of(
                 new Order(1, 100),
                 new Order(2, 250),
@@ -20,6 +22,9 @@ public class CustomObjectBinaryOperatorExample {
                 .orElseThrow();
 
         System.out.println("Total order value: " + result.total);
+
+        System.out.println("Fim StringConcatBinaryOperatorExample");
+        System.out.println();
     }
 
     static class Order {
