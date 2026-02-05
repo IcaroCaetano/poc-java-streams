@@ -24,6 +24,7 @@ public class BigDecimalSumBinaryOperatorExample {
         System.out.println("BigDecimal total: " + total);
 
          System.out.println("Fim BigDecimalSumBinaryOperatorExample");
+        System.out.println();
     }
 }
 

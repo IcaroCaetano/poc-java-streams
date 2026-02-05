@@ -163,5 +163,6 @@ public class PocJavaStreamsApplication {
         new MaxBinaryOperatorExample().execute();
         new StringConcatBinaryOperatorExample().execute();
         new BigDecimalSumBinaryOperatorExample().execute();
+
     }
 }

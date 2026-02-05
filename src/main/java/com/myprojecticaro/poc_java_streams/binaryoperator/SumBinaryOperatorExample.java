@@ -18,6 +18,7 @@ public class SumBinaryOperatorExample {
         System.out.println("Sum result: " + result);
 
         System.out.println("Fim SumBinaryOperatorExample");
+        System.out.println();
     }
 }
 

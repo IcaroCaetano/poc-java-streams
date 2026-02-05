@@ -17,6 +17,7 @@ public class MaxBinaryOperatorExample {
         System.out.println("Max value: " + max);
 
         System.out.println("Fim MaxBinaryOperatorExample");
+        System.out.println();
     }
 }
 

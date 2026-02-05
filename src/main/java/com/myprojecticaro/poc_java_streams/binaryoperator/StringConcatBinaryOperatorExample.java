@@ -19,6 +19,7 @@ public class StringConcatBinaryOperatorExample {
         System.out.println("Concatenation result: " + result);
 
         System.out.println("Fim StringConcatBinaryOperatorExample");
+        System.out.println();
     }
 }
 
