@@ -157,6 +157,7 @@ public class PocJavaStreamsApplication {
         Thread.currentThread().interrupt();
       }
 
+        System.out.println();
 		System.out.println("=== BinaryOperator POC ===");
 
         new SumBinaryOperatorExample().execute();
