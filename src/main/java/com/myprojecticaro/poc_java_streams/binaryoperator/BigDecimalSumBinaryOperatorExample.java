@@ -7,6 +7,9 @@ import java.util.function.BinaryOperator;
 public class BigDecimalSumBinaryOperatorExample {
 
     public void execute() {
+
+        System.out.println("Inicio BigDecimalSumBinaryOperatorExample");
+        
         List<BigDecimal> values = List.of(
                 new BigDecimal("10.50"),
                 new BigDecimal("20.30"),
@@ -19,6 +22,8 @@ public class BigDecimalSumBinaryOperatorExample {
                 .reduce(BigDecimal.ZERO, sumOperator);
 
         System.out.println("BigDecimal total: " + total);
+
+         System.out.println("Fim BigDecimalSumBinaryOperatorExample");
     }
 }
 
