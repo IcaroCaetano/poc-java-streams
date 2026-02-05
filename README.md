@@ -61,7 +61,7 @@ Stream.generate(new IncrementalSupplier())
 
 📌 *Key concept:* Suppliers are only executed when the stream reaches a terminal operation.
 
-##🧩 BinaryOperator
+## 🧩 BinaryOperator
 
 ### What is it?
 
@@ -121,6 +121,10 @@ int result = numbers.stream()
 System.out.println(result);
 
 ````
+
+📌 Key concept:
+BinaryOperator is fundamental for reduction logic.
+When used in parallel streams, the operation must be associative and stateless to guarantee correct results.
 
 ## 🧩 Runnable
 
