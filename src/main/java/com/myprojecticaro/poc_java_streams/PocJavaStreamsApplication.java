@@ -1,5 +1,9 @@
 package com.myprojecticaro.poc_java_streams;
 
+import com.myprojecticaro.poc_java_streams.binaryoperator.BigDecimalSumBinaryOperatorExample;
+import com.myprojecticaro.poc_java_streams.binaryoperator.MaxBinaryOperatorExample;
+import com.myprojecticaro.poc_java_streams.binaryoperator.StringConcatBinaryOperatorExample;
+import com.myprojecticaro.poc_java_streams.binaryoperator.SumBinaryOperatorExample;
 import com.myprojecticaro.poc_java_streams.consumer.LogConsumer;
 import com.myprojecticaro.poc_java_streams.consumer.LoggingConsumer;
 import com.myprojecticaro.poc_java_streams.consumer.MetricConsumer;
