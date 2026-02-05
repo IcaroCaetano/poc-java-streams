@@ -61,6 +61,67 @@ Stream.generate(new IncrementalSupplier())
 
 📌 *Key concept:* Suppliers are only executed when the stream reaches a terminal operation.
 
+##🧩 BinaryOperator
+
+### What is it?
+
+BinaryOperator<T> represents a function that receives two values of the same type and returns one value of the same type.
+
+It is a specialization of BiFunction<T, T, T> and is commonly used in reduction operations.
+
+
+````java
+T apply(T t1, T t2);
+````
+
+### Typical Use Cases
+
+- Reducing a stream to a single value
+
+- Aggregating numeric values (sum, max, min)
+
+- Combining domain objects
+
+- Merging partial results in parallel streams
+
+- Implementing custom business aggregation rules
+
+### Commonly Used With
+
+- Stream.reduce(...)
+
+- Collectors.reducing(...)
+
+- Parallel streams (as a combiner)
+
+### Examples in this POC
+
+- Sum of integers
+
+- Finding the maximum value
+
+- String concatenation
+
+- Financial aggregation using BigDecimal
+
+- Reducing custom domain objects (Order)
+
+- Safe usage with parallel streams
+
+#### Example
+
+````java
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
+BinaryOperator<Integer> sumOperator = Integer::sum;
+
+int result = numbers.stream()
+        .reduce(0, sumOperator);
+
+System.out.println(result);
+
+````
+
 ## 🧩 Runnable
 
 ### What is it?
