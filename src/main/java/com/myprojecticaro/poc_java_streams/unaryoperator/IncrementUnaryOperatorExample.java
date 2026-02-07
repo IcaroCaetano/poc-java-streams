@@ -7,6 +7,8 @@ public class IncrementUnaryOperatorExample {
 
     public void execute() {
 
+        System.out.println("Inicio IncrementUnaryOperatorExample");
+
         List<Integer> numbers = List.of(1, 2, 3, 4);
 
         UnaryOperator<Integer> increment = value -> value + 1;
@@ -14,5 +16,8 @@ public class IncrementUnaryOperatorExample {
         numbers.stream()
                 .map(increment)
                 .forEach(System.out::println);
+
+        System.out.println("Fim IncrementUnaryOperatorExample");
+        System.out.println();
     }
 }
