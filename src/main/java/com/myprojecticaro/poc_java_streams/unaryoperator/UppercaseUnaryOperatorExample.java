@@ -7,6 +7,8 @@ public class UppercaseUnaryOperatorExample {
 
     public void execute() {
 
+        System.out.println("Inicio UppercaseUnaryOperatorExample");
+
         List<String> names = List.of("java", "streams", "lambda");
 
         UnaryOperator<String> toUppercase = String::toUpperCase;
@@ -14,5 +16,9 @@ public class UppercaseUnaryOperatorExample {
         names.stream()
                 .map(toUppercase)
                 .forEach(System.out::println);
+
+
+        System.out.println("Fim UppercaseUnaryOperatorExample");
+        System.out.println();
     }
 }
