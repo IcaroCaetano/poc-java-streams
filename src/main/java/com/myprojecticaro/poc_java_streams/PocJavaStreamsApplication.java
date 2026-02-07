@@ -10,6 +10,7 @@ import com.myprojecticaro.poc_java_streams.runnable.HeavyTaskRunnable;
 import com.myprojecticaro.poc_java_streams.runnable.HelloRunnable;
 import com.myprojecticaro.poc_java_streams.service.StreamProcessingService;
 import com.myprojecticaro.poc_java_streams.supplier.*;
+import com.myprojecticaro.poc_java_streams.unaryoperator.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDateTime;
@@ -164,5 +165,14 @@ public class PocJavaStreamsApplication {
         new CustomObjectBinaryOperatorExample().execute();
         new ParallelStreamBinaryOperatorExample().execute();
 
+        System.out.println();
+        System.out.println("=== UnaryOperator POC ===");
+
+        new BigDecimalDiscountUnaryOperatorExample().execute();
+        new DomainObjectUnaryOperatorExample().execute();
+        new IncrementUnaryOperatorExample().execute();
+        new TrimUnaryOperatorExample().execute();
+        new UnaryOperatorWithAndThenExample().execute();
+        new UppercaseUnaryOperatorExample().execute();
     }
 }
