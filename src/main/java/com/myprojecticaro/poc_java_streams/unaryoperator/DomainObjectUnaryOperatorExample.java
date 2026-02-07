@@ -7,6 +7,8 @@ public class DomainObjectUnaryOperatorExample {
 
     public void execute() {
 
+        System.out.println("Inicio DomainObjectUnaryOperatorExample");
+
         List<User> users = List.of(
                 new User("icaro", false),
                 new User("admin", false)
@@ -17,6 +19,9 @@ public class DomainObjectUnaryOperatorExample {
         users.stream()
                 .map(activateUser)
                 .forEach(System.out::println);
+
+        System.out.println("Fim DomainObjectUnaryOperatorExample");
+        System.out.println();
     }
 
     static class User {
