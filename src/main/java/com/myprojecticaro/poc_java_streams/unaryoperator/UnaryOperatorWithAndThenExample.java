@@ -7,6 +7,8 @@ public class UnaryOperatorWithAndThenExample {
 
     public void execute() {
 
+        System.out.println("Inicio UnaryOperatorWithAndThenExample");
+
         UnaryOperator<String> trim = String::trim;
         UnaryOperator<String> uppercase = String::toUpperCase;
 
@@ -15,5 +17,8 @@ public class UnaryOperatorWithAndThenExample {
         System.out.println(composed.apply("  java streams  "));
 
         System.out.println(composed.apply("  java streams  "));
+
+        System.out.println("Fim UnaryOperatorWithAndThenExample");
+        System.out.println();
     }
 }
