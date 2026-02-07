@@ -8,6 +8,8 @@ public class BigDecimalDiscountUnaryOperatorExample {
 
     public void execute() {
 
+        System.out.println("Inicio BigDecimalDiscountUnaryOperatorExample");
+
         List<BigDecimal> prices = List.of(
                 new BigDecimal("100.00"),
                 new BigDecimal("200.00")
@@ -18,5 +20,8 @@ public class BigDecimalDiscountUnaryOperatorExample {
         prices.stream()
                 .map(applyDiscount)
                 .forEach(System.out::println);
+
+        System.out.println("Fim BigDecimalDiscountUnaryOperatorExample");
+        System.out.println();
     }
 }
