@@ -175,6 +175,20 @@ T apply(T t);
 
 - Safe transformations in streams
 
+```java
+List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+
+UnaryOperator<Integer> incrementOperator = n -> n + 1;
+
+List<Integer> result = numbers.stream()
+        .map(incrementOperator)
+        .toList();
+
+System.out.println(result);
+```
+
+
+
 ## 🧩 Runnable
 
 ### What is it?
