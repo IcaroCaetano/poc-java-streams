@@ -153,6 +153,28 @@ T apply(T t);
 
 ### Commonly Used With
 
+- Stream.map(...)
+
+- Optional.map(...)
+
+- Collections.replaceAll(...)
+
+- List.replaceAll(...)
+
+- Custom transformation pipelines
+
+### Examples in this POC
+
+- Incrementing numeric values
+
+- Converting strings to uppercase or lowercase
+
+- Applying discounts or adjustments to BigDecimal values
+
+- Updating fields of domain objects (e.g., Order)
+
+- Safe transformations in streams
+
 ## 🧩 Runnable
 
 ### What is it?
