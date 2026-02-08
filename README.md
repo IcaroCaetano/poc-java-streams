@@ -8,6 +8,10 @@ This repository contains a Proof of Concept (POC) demonstrating the practical us
 
 - Runnable
 
+- BinaryOperator 
+
+- UnaryOperator 
+
 The goal is to show how these interfaces can be combined with Java Streams and threads to build clean, expressive, and extensible processing pipelines.
 
 
