@@ -135,6 +135,10 @@ UnaryOperator<T> represents a function that receives one value and returns a val
 
 It is a specialization of Function<T, T> and is commonly used when you want to transform or modify a value without changing its type.
 
+```java
+T apply(T t);
+```
+
 ## 🧩 Runnable
 
 ### What is it?
