@@ -126,6 +126,15 @@ System.out.println(result);
 BinaryOperator is fundamental for reduction logic.
 When used in parallel streams, the operation must be associative and stateless to guarantee correct results.
 
+
+## 🧩 UnaryOperator
+
+What is it?
+
+UnaryOperator<T> represents a function that receives one value and returns a value of the same type.
+
+It is a specialization of Function<T, T> and is commonly used when you want to transform or modify a value without changing its type.
+
 ## 🧩 Runnable
 
 ### What is it?
