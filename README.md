@@ -187,7 +187,11 @@ List<Integer> result = numbers.stream()
 System.out.println(result);
 ```
 
+### 📌 Key concept:
 
+UnaryOperator is ideal when the input and output types are the same.
+
+It promotes clean, readable transformations and fits naturally into stream pipelines and functional-style code.
 
 ## 🧩 Runnable
 
