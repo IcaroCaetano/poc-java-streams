@@ -139,6 +139,20 @@ It is a specialization of Function<T, T> and is commonly used when you want to t
 T apply(T t);
 ```
 
+### Typical Use Cases
+
+- Transforming elements in a stream
+
+- Applying mutations or adjustments to values
+
+- Normalizing or formatting data
+
+- Incrementing, decrementing, or updating values
+
+- Applying business rules that keep the same type
+
+### Commonly Used With
+
 ## 🧩 Runnable
 
 ### What is it?
