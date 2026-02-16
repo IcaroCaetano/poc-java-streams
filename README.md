@@ -303,6 +303,7 @@ This makes the POC easy to run and understand step by step.
 
 - Map concepts to classic design patterns (Producer–Consumer, Pipeline)
 
+
 ## ✅ Conclusion
 
 This POC provides a clear and practical exploration of Supplier, Consumer, and Runnable, showing how Java’s functional interfaces enable expressive, modular, and modern application design.
